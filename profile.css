@@ -42,3 +42,32 @@
 .lab-photo-group{margin-top:28px}.lab-photo-group>h3{font:400 24px/1.35 Georgia,'Noto Serif JP',serif;color:#193e48;margin:0 0 12px}.lab-photo-group>p{font-size:16px;line-height:1.7;margin:0 0 18px}.lab-photo-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:25px 18px}.lab-photo-gallery figure{margin:0;min-width:0}.lab-photo-gallery img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;background:#edf2f2}.lab-photo-gallery figcaption{font-size:14px;line-height:1.6;color:#49676f;margin-top:9px}@media(max-width:650px){.lab-photo-gallery{grid-template-columns:1fr}}
 
 .lab-photo-gallery img[src="lab-graduates-2025-academic-year.jpg"],.lab-photo-gallery img[src="lab-social-event.jpg"]{aspect-ratio:2/1;object-fit:cover;object-position:center top}
+
+/* Academic reading and figure alignment refinements */
+body{font-size:16px;line-height:1.65}
+main p{overflow-wrap:break-word}
+h1,h2,h3,h4{overflow-wrap:break-word}
+.section-head>div,.case-layout>div,.faculty-overview-grid>div{min-width:0}
+.section-head>div>p+p{margin-top:16px}
+.detail-cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.detail-cards article{padding:24px;background:#fff;border-top:3px solid #327181}
+.detail-cards h3{line-height:1.4}
+.detail-cards p,.study-board p,.lab-grid p,.project-list p,.case-details p{font-size:16px;line-height:1.75}
+.detail-cards article>a{font-size:14px;line-height:1.6}
+.section h2{line-height:1.35}
+figure{break-inside:avoid}
+figure figcaption{font-size:14px!important;line-height:1.6!important;text-align:left;overflow-wrap:break-word}
+.lab-photo-gallery{align-items:start;row-gap:30px}
+.lab-photo-gallery figure{display:flex;flex-direction:column}
+.lab-photo-gallery figure img{flex:none}
+.lab-photo-gallery figure figcaption{position:static;margin:10px 0 0}
+.lab-photo-gallery img{border:1px solid #dbe3e5}
+.archive-photos img{object-fit:contain;background:#edf2f2}
+#alumni .section-head{margin-bottom:0}
+nav a[aria-current="page"]{color:#14576b;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px}
+a:focus-visible{outline:3px solid #327181;outline-offset:4px}
+@media(max-width:850px){.mast-grid{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:30px}.site-header nav{gap:10px 16px}}
+@media(max-width:650px){.mast-grid{grid-template-columns:1fr}.detail-cards{grid-template-columns:1fr}.detail-cards article{padding:20px}.mast h1{font-size:clamp(31px,8vw,38px)}.submast h1{font-size:clamp(34px,9vw,45px)}.section h2{font-size:28px}.project-list article{grid-template-columns:32px minmax(0,1fr);gap:12px}.pubs li,.pub-list li{grid-template-columns:48px minmax(0,1fr);gap:12px}.lab-photo-gallery{gap:28px}.site-header nav a{font-size:14px}.wrap{padding-left:20px;padding-right:20px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media(min-width:1051px){.detail-cards:has(>article:nth-child(3):last-child){grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(min-width:651px) and (max-width:1050px){.detail-cards:has(>article:nth-child(3):last-child){grid-template-columns:1fr}}
