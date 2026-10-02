@@ -25,7 +25,7 @@
 
 .prof-text-only{grid-template-columns:1fr}
 
-.case-single-photo{max-width:640px;margin:24px 0}.case-single-photo img{display:block;width:100%;height:auto;max-height:380px;object-fit:cover}.case-single-photo figcaption{font-size:13px;line-height:1.5;color:#59747a;margin-top:8px}
+.case-single-photo{max-width:640px;margin:24px 0}.case-single-photo img{display:block;width:100%;height:auto;max-height:none;object-fit:contain}.case-single-photo figcaption{font-size:14px;line-height:1.6;color:#59747a;margin:6px 0 0}
 
 .graduate-course-group{margin:25px 0}.graduate-course-group h3{font:400 23px/1.35 Georgia,'Noto Serif JP',serif;margin:28px 0 10px;color:#173942}.graduate-course-group .features{margin-top:10px}
 .academic-records .course-only{display:block;padding:16px 0}.academic-records .course-only h3{margin:0;font:400 18px/1.5 Arial,'Noto Sans JP',sans-serif}
