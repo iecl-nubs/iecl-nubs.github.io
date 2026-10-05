@@ -103,3 +103,8 @@ a:focus-visible{outline:3px solid #327181;outline-offset:4px}
 .research-history-page .research-topic-table tbody th{font-size:17px;margin-bottom:10px}
 .research-history-page .research-topic-table tbody td{font-size:15px}
 }
+
+/* Field sampling photographs: preserve the complete image and native resolution. */
+.archive-photos.field-sampling-photos{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
+.archive-photos.field-sampling-photos img{width:auto;max-width:100%;height:auto;max-height:none;margin:0;object-fit:contain;background:transparent}
+@media(max-width:650px){.archive-photos.field-sampling-photos{grid-template-columns:1fr}}
